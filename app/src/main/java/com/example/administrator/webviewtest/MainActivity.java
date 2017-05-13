@@ -11,6 +11,7 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.JavascriptInterface;
 import com.flurry.android.FlurryAgent;
+//sdfsdf
 public class MainActivity extends Activity {
     public static final String LOAD_URL = "http://www.baidu.com/";
     private WebView webView = null;
