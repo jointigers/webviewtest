@@ -1,6 +1,7 @@
 package com.example.administrator.webviewtest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Handler;
@@ -10,6 +11,8 @@ import android.view.KeyEvent;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.webkit.JavascriptInterface;
+import android.widget.Toast;
+
 import com.flurry.android.FlurryAgent;
 //sdfsdf
 public class MainActivity extends Activity {
@@ -17,6 +20,16 @@ public class MainActivity extends Activity {
     private WebView webView = null;
     private String serverVersion;
     private Selfhandler handler = new Selfhandler();
+//    /**
+//     * 配制发生变化，这里处理屏幕旋转的事件
+//     * @param newConfig
+//     */
+//    @Override
+//    public void onConfigurationChanged(Configuration newConfig) {
+//        super.onConfigurationChanged(newConfig);
+//        String message=newConfig.orientation==Configuration.ORIENTATION_LANDSCAPE ? "屏幕设置为：横屏" : "屏幕设置为：竖屏";
+//        Toast.makeText(this,message,Toast.LENGTH_SHORT).show();
+//    }
     @JavascriptInterface
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
