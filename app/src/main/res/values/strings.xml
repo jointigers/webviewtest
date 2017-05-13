@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">网页打包</string>
+    <string name="web_url">http://www.baidu.com</string>
+</resources>
